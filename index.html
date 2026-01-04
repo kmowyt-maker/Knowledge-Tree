@@ -3,130 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy2Success Web App</title>
+    <title>Easy2Success Education Web</title>
     <style>
-        /* CSS ပိုင်း - ပုံစံ ပြင်ဆင်ခြင်း */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            background-color: white;
-            width: 350px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-            padding-bottom: 20px;
-        }
-
-        /* Header ပိုင်း */
-        .header {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(to bottom, #ffb347, #70e1ff);
-            border-radius: 50%;
-            margin: 0 auto 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 40px;
-        }
-
-        .app-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin: 5px 0;
-        }
-
-        .version {
-            color: gray;
-            font-size: 14px;
-        }
-
-        /* List ပိုင်း */
-        .info-list {
-            padding: 10px 20px;
-        }
-
-        .info-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 0;
-            border-bottom: 1px solid #eee;
-            cursor: pointer;
-        }
-
-        .info-item span:first-child {
-            font-weight: 500;
-        }
-
-        .info-item span:last-child {
-            color: #888;
-        }
-
-        /* Button ပိုင်း */
-        .button-group {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .btn {
-            border: none;
-            background: none;
-            color: #555;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        .btn i {
-            display: block;
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
+        body { font-family: sans-serif; background-color: #0b4d71; color: white; margin: 0; padding: 0; }
+        .header { background-color: white; padding: 10px; display: flex; justify-content: space-between; align-items: center; color: #333; }
+        .banner { padding: 20px; background: linear-gradient(90deg, #1e90ff, #87cefa); margin: 15px; border-radius: 15px; }
+        .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; padding: 15px; text-align: center; }
+        .grid-item { background: white; padding: 15px; border-radius: 15px; color: #333; font-size: 14px; }
+        .grid-item img { width: 50px; margin-bottom: 10px; }
+        .vip-banner { background: #f1c40f; color: #333; padding: 15px; margin: 15px; border-radius: 10px; text-align: center; font-weight: bold; }
+        .footer-btns { display: flex; justify-content: space-around; padding: 10px; }
+        .btn { background: #3498db; border: none; padding: 10px 20px; border-radius: 5px; color: white; cursor: pointer; }
+        
+        /* Video Section */
+        .video-section { padding: 15px; }
+        video { width: 100%; border-radius: 10px; border: 2px solid white; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <div class="logo">😊</div>
-            <div class="app-title">Easy2Success</div>
-            <div class="version">Version: 2.1.7</div>
-        </div>
+    <div class="header">
+        <span>☰</span>
+        <img src="https://via.placeholder.com/40" alt="Logo" style="border-radius: 50%;">
+        <span>🔔</span>
+    </div>
 
-        <div class="info-list">
-            <div class="info-item">
-                <span>Storage</span>
-                <span>146 MB ></span>
-            </div>
-            <div class="info-item">
-                <span>Data usage</span>
-                <span>3.5 KB ></span>
-            </div>
-            <div class="info-item">
-                <span>Battery</span>
-                <span>2.6% ></span>
-            </div>
-        </div>
+    <div style="padding: 15px;">
+        <h3>မင်္ဂလာညနေခင်းပါ</h3>
+        <p>User Name: Wa Yan</p>
+    </div>
 
-        <div class="button-group">
-            <button class="btn">Force stop</button>
-            <button class="btn" style="color: red;">Uninstall</button>
-            <button class="btn">Clear data</button>
-        </div>
+    <div class="banner">
+        <h4>EASY2SUCCESS အပေါ်</h4>
+        <p>ရင်ထဲကစကားသံများနှင့် အကြံပြုချက်များ ပေးပို့လိုပါက</p>
+        <button class="btn">Feedback Now</button>
+    </div>
+
+    <div class="video-section">
+        <h4>သင်ခန်းစာ အစမ်းကြည့်ရှုရန်</h4>
+        <video controls>
+            <source src="your-video-link.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">🎯<br>ရည်မှန်းချက်များ</div>
+        <div class="grid-item">🎓<br>စာသင်ခန်း</div>
+        <div class="grid-item">💼<br>အလုပ်အကိုင်</div>
+        <div class="grid-item">📹<br>VIP တွေ့ဆုံပွဲ</div>
+        <div class="grid-item">🎙️<br>ပေါ့ဒ်ကတ်စ်များ</div>
+        <div class="grid-item">📚<br>စာကြည့်တိုက်</div>
+    </div>
+
+    <div class="vip-banner">VIP မန်ဘာဝင်မယ်</div>
+
+    <div class="footer-btns">
+        <button class="btn">🪙 ကိုင်ဝယ်မယ်</button>
+        <button class="btn">📺 30 Coins</button>
     </div>
 
 </body>
