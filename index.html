@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy2Success Web App</title>
+    <style>
+        /* CSS ပိုင်း - ပုံစံ ပြင်ဆင်ခြင်း */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        /* Header ပိုင်း */
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(to bottom, #ffb347, #70e1ff);
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        .app-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .version {
+            color: gray;
+            font-size: 14px;
+        }
+
+        /* List ပိုင်း */
+        .info-list {
+            padding: 10px 20px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+
+        .info-item span:first-child {
+            font-weight: 500;
+        }
+
+        .info-item span:last-child {
+            color: #888;
+        }
+
+        /* Button ပိုင်း */
+        .button-group {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .btn {
+            border: none;
+            background: none;
+            color: #555;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">😊</div>
+            <div class="app-title">Easy2Success</div>
+            <div class="version">Version: 2.1.7</div>
+        </div>
+
+        <div class="info-list">
+            <div class="info-item">
+                <span>Storage</span>
+                <span>146 MB ></span>
+            </div>
+            <div class="info-item">
+                <span>Data usage</span>
+                <span>3.5 KB ></span>
+            </div>
+            <div class="info-item">
+                <span>Battery</span>
+                <span>2.6% ></span>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn">Force stop</button>
+            <button class="btn" style="color: red;">Uninstall</button>
+            <button class="btn">Clear data</button>
+        </div>
+    </div>
+
+</body>
+</html>
